@@ -1,0 +1,4 @@
+SELECT P.NOME AS "Prato principal", B.NOME as Bebida, F.NOME as Fruta FROM CARDAPIO C
+JOIN prato_principal P ON C.PRATO_ID = P.ID
+JOIN BEBIDA B ON C.BEBIDA_ID = B.ID
+JOIN FRUTA F ON C.FRUTA_ID = F.ID
